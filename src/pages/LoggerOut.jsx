@@ -12,7 +12,7 @@ function Brand({ children }) {
   );
 }
 
-export function LoggerOut() {
+export default function LoggerOut() {
   return (
     <>
       <main className="relative">
