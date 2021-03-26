@@ -1,8 +1,6 @@
-import * as Button from "components/Button";
 import * as Icon from "components/Icon";
-import * as Input from "components/Input";
 
-export function Register() {
+export function Form({ title, children }) {
   return (
     <div className="flex flex-col px-4">
       <header className="h-16 flex items-center">
@@ -12,17 +10,13 @@ export function Register() {
       </header>
 
       <main>
-        <h1 className="pb-8 text-4xl font-medium font-comfortaa">Register</h1>
+        <h1 className="pb-8 text-4xl font-medium font-comfortaa">{title}</h1>
 
         <form
           className="text-sm space-y-4"
           onSubmit={(event) => event.preventDefault()}
         >
-          <Input.Text placeholder="Email" />
-
-          <Input.Password placeholder="Password" />
-
-          <Button.Black className="text-xs">NEXT</Button.Black>
+          {children}
         </form>
       </main>
     </div>
