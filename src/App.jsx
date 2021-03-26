@@ -4,8 +4,8 @@ import { Register } from "pages/Register";
 function App() {
   return (
     <div className="w-screen h-screen flex flex-col">
-      <LoggerOut />
-      {/* <Register /> */}
+      {/* <LoggerOut /> */}
+      <Register />
     </div>
   );
 }

@@ -1,3 +1,4 @@
-import { ReactComponent as LOGO } from "assets/icon/logo.svg";
+import { ReactComponent as Logo } from "assets/icon/logo.svg";
+import { ReactComponent as Back } from "assets/icon/back.svg";
 
-export { LOGO };
+export { Logo, Back };

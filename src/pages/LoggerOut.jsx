@@ -1,11 +1,11 @@
 import BG_IMG from "assets/login-background.jpg";
-import { LOGO } from "components/Icon";
-import { Button } from "components/Button";
+import { Logo } from "components/Icon";
+import * as Button from "components/Button";
 
 function Brand({ children }) {
   return (
     <h1 className="flex justify-center space-x-4 text-5xl font-medium font-comfortaa">
-      <LOGO />
+      <Logo />
 
       <span>{children}</span>
     </h1>
@@ -23,9 +23,9 @@ export function LoggerOut() {
         </div>
       </main>
 
-      <footer className="h-full flex justify-center items-center p-4 space-x-2 text-xs ">
-        <Button className="font-bold">LOG IN</Button>
-        <Button className="bg-black text-white font-bold">REGISTER</Button>
+      <footer className="h-full flex justify-center items-center px-4 space-x-2 text-xs">
+        <Button.Default className="font-bold">LOG IN</Button.Default>
+        <Button.Black className="font-bold">REGISTER</Button.Black>
       </footer>
     </>
   );
