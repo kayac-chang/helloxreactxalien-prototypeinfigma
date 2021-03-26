@@ -12,3 +12,10 @@ Build a simple app using React and have fun !!!
 - Install [node.js](https://nodejs.org/en/)
 
 - Install [yarn](https://yarnpkg.com/getting-started/install)
+
+## Page Detail
+
+### Logged out
+
+- Absolute Imports
+- Adding a CSS Reset
