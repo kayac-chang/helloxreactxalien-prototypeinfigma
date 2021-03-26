@@ -7,4 +7,8 @@ Build a simple app using React and have fun !!!
 - [Prototype](https://www.figma.com/proto/8hNQBm1hRAKEgWXASmo3OM/Prototyping-in-Figma?node-id=0%3A2&scaling=scale-down&page-id=0%3A1)
 - [Youtube](https://youtu.be/TB-_uu5Gnr8)
 
+## Environment Setup
 
+- Install [node.js](https://nodejs.org/en/)
+
+- Install [yarn](https://yarnpkg.com/getting-started/install)
