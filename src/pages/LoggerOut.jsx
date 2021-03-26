@@ -14,7 +14,7 @@ function Brand({ children }) {
 
 export function LoggerOut() {
   return (
-    <div className="w-screen h-screen flex flex-col">
+    <>
       <main className="relative">
         <img src={BG_IMG} alt={BG_IMG} />
 
@@ -27,6 +27,6 @@ export function LoggerOut() {
         <Button className="font-bold">LOG IN</Button>
         <Button className="bg-black text-white font-bold">REGISTER</Button>
       </footer>
-    </div>
+    </>
   );
 }
