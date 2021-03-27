@@ -4,12 +4,10 @@ import { useEffect, useState } from "react";
   const history = global.history;
   const pushState = history.pushState;
 
-  history.pushState = (...args) => {
-    pushState.apply(history, args);
+  history.pushState = (state, title, url) => {
+    pushState.apply(history, [state, title, process.env.PUBLIC_URL + url]);
 
     if (typeof global.onpushstate === "function") {
-      const [state] = args;
-
       global.onpushstate({ state });
     }
   };
@@ -30,7 +28,7 @@ const Location = ({
   hostname,
   href,
   origin,
-  pathname,
+  pathname: pathname.replace(process.env.PUBLIC_URL, "") || "/",
   port,
   protocol,
 });

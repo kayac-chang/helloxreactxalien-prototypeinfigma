@@ -2,6 +2,7 @@
   "name": "helloxreactxalien-prototypeinfigma",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kayac-chang.github.io/helloxreactxalien-prototypeinfigma",
   "dependencies": {
     "clsx": "^1.1.1",
     "react": "^17.0.2",
@@ -14,6 +15,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^9",
+    "gh-pages": "^3.1.0",
     "postcss": "^7",
     "react-scripts": "4.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
@@ -22,7 +24,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
