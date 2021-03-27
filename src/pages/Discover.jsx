@@ -1,6 +1,7 @@
 import usePosts from "api/usePosts";
 import Swiper from "components/Swiper";
 import Avatar from "components/Avatar";
+import * as Button from "components/Button";
 import clsx from "clsx";
 
 function Section({ title, children }) {
@@ -56,6 +57,12 @@ export default function Discover() {
         <WhatsNewToday posts={posts} />
 
         <BrowseAll posts={posts} />
+
+        <section className="py-8">
+          <Button.Default className="text-xs font-bold">
+            SEE MORE
+          </Button.Default>
+        </section>
       </main>
     </div>
   );
