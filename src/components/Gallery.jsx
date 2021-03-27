@@ -1,13 +1,14 @@
 import clsx from "clsx";
+import { Children, cloneElement } from "react";
 
-export default function Gallery({ resources }) {
+export default function Gallery({ children }) {
   return (
     <div className="grid grid-cols-2 gap-2 h-screen overflow-hidden">
-      {resources.map((src, index) => (
-        <div key={src} className={clsx({ "-mt-20": !(index % 2) })}>
-          <img src={src} alt="img" className="object-cover h-80" />
-        </div>
-      ))}
+      {Children.map(children, (el, index) =>
+        cloneElement(el, {
+          className: clsx(el.props.className, index % 2 || "-mt-20"),
+        })
+      )}
     </div>
   );
 }

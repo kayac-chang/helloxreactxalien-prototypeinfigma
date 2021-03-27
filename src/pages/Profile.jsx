@@ -1,21 +1,9 @@
 import * as Template from "components/templates";
 import * as Button from "components/Button";
+import * as Avatar from "components/Avatar";
 import useUsers from "hooks/useUsers";
 import usePhotos from "hooks/usePhotos";
 import Gallery from "components/Gallery";
-
-function Avatar({ user }) {
-  return (
-    <section className="flex flex-col items-center py-8 space-y-8">
-      <img className="rounded-full w-32" src={user.avatar} alt="user avatar" />
-
-      <div className="text-center space-y-2">
-        <h1 className="text-4xl font-comfortaa">{user.name}</h1>
-        <p className="text-sm font-bold">{user.location}</p>
-      </div>
-    </section>
-  );
-}
 
 function Control({ user }) {
   return (
@@ -32,7 +20,13 @@ function Control({ user }) {
 function Photos({ photos }) {
   return (
     <section className="py-8 space-y-8">
-      <Gallery resources={photos} />
+      <Gallery>
+        {photos.map((photo) => (
+          <div key={photo}>
+            <img src={photo} alt="img" className="object-cover h-80" />
+          </div>
+        ))}
+      </Gallery>
 
       <section>
         <Button.Default className="text-xs font-bold">SEE MORE</Button.Default>
@@ -51,7 +45,7 @@ export default function Profile() {
 
   return (
     <Template.Main className="px-4">
-      <Avatar user={user} />
+      <Avatar.Big user={user} />
 
       <Control user={user} />
 

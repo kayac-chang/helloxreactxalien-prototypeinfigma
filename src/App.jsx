@@ -13,11 +13,11 @@ function App() {
       {/* <Register.Step1 /> */}
       {/* <Register.Step2 /> */}
       {/* <Login /> */}
-      {/* <Discover /> */}
+      <Discover />
       {/* <Search /> */}
       {/* <Profile /> */}
       {/* <Chat.List /> */}
-      <Chat.Room />
+      {/* <Chat.Room /> */}
     </div>
   );
 }
