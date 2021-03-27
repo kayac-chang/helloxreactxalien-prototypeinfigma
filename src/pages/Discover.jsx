@@ -2,6 +2,7 @@ import usePosts from "hooks/usePosts";
 import Swiper from "components/Swiper";
 import Avatar from "components/Avatar";
 import Section from "components/Section";
+import Gallery from "components/Gallery";
 import * as Template from "components/templates";
 import * as Button from "components/Button";
 import clsx from "clsx";
@@ -25,13 +26,7 @@ function WhatsNewToday({ posts }) {
 function BrowseAll({ posts }) {
   return (
     <Section title="BROWSE ALL">
-      <div className="grid grid-cols-2 gap-2 h-screen overflow-hidden">
-        {posts.map(({ photo }, index) => (
-          <div key={photo} className={clsx({ "-mt-20": !(index % 2) })}>
-            <img src={photo} alt="img" className="object-cover h-80" />
-          </div>
-        ))}
-      </div>
+      <Gallery resources={posts.map(({ photo }) => photo)} />
     </Section>
   );
 }
