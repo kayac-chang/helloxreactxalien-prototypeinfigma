@@ -1,6 +1,7 @@
 import usePosts from "api/usePosts";
 import Swiper from "components/Swiper";
 import Avatar from "components/Avatar";
+import BottomNav from "components/BottomNav";
 import * as Button from "components/Button";
 import clsx from "clsx";
 
@@ -48,22 +49,26 @@ export default function Discover() {
   const posts = usePosts();
 
   return (
-    <div className="flex flex-col px-4 ">
-      <header>
-        <h1 className="py-8 text-4xl font-medium font-comfortaa">Discover</h1>
-      </header>
+    <>
+      <div className="flex flex-col px-4 pb-16">
+        <header>
+          <h1 className="py-8 text-4xl font-medium font-comfortaa">Discover</h1>
+        </header>
 
-      <main>
-        <WhatsNewToday posts={posts} />
+        <main>
+          <WhatsNewToday posts={posts} />
 
-        <BrowseAll posts={posts} />
+          <BrowseAll posts={posts} />
 
-        <section className="py-8">
-          <Button.Default className="text-xs font-bold">
-            SEE MORE
-          </Button.Default>
-        </section>
-      </main>
-    </div>
+          <section className="py-8">
+            <Button.Default className="text-xs font-bold">
+              SEE MORE
+            </Button.Default>
+          </section>
+        </main>
+      </div>
+
+      <BottomNav />
+    </>
   );
 }
