@@ -1,12 +1,13 @@
 import * as Icon from "components/Icon";
+import Link from "components/Link";
 
 export function Form({ title, children }) {
   return (
     <div className="flex flex-col px-4">
       <header className="h-16 flex items-center">
-        <button className="py-2 pr-2">
+        <Link className="py-2 pr-2" to="/">
           <Icon.Back className="w-4" />
-        </button>
+        </Link>
       </header>
 
       <main>

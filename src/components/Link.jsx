@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-function push(to) {
+export function push(to) {
   return window.history.pushState({}, "", to);
 }
 
