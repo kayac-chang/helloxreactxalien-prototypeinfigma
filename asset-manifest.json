@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/prototype-in-figma/static/css/main.6b381f00.chunk.css",
-    "main.js": "/prototype-in-figma/static/js/main.15deba43.chunk.js",
-    "main.js.map": "/prototype-in-figma/static/js/main.15deba43.chunk.js.map",
-    "runtime-main.js": "/prototype-in-figma/static/js/runtime-main.5299660e.js",
-    "runtime-main.js.map": "/prototype-in-figma/static/js/runtime-main.5299660e.js.map",
-    "static/js/2.ac6aba7f.chunk.js": "/prototype-in-figma/static/js/2.ac6aba7f.chunk.js",
-    "static/js/2.ac6aba7f.chunk.js.map": "/prototype-in-figma/static/js/2.ac6aba7f.chunk.js.map",
-    "index.html": "/prototype-in-figma/index.html",
-    "static/css/main.6b381f00.chunk.css.map": "/prototype-in-figma/static/css/main.6b381f00.chunk.css.map",
-    "static/js/2.ac6aba7f.chunk.js.LICENSE.txt": "/prototype-in-figma/static/js/2.ac6aba7f.chunk.js.LICENSE.txt",
-    "static/media/back.27a911e1.svg": "/prototype-in-figma/static/media/back.27a911e1.svg",
-    "static/media/chat.fc7d0ee2.svg": "/prototype-in-figma/static/media/chat.fc7d0ee2.svg",
-    "static/media/chevron.19bec2b9.svg": "/prototype-in-figma/static/media/chevron.19bec2b9.svg",
-    "static/media/close.c4aa7b3b.svg": "/prototype-in-figma/static/media/close.c4aa7b3b.svg",
-    "static/media/home.74ff7650.svg": "/prototype-in-figma/static/media/home.74ff7650.svg",
-    "static/media/login-background.8a0e4ac9.jpg": "/prototype-in-figma/static/media/login-background.8a0e4ac9.jpg",
-    "static/media/logo.d40cdef7.svg": "/prototype-in-figma/static/media/logo.d40cdef7.svg",
-    "static/media/person.2411d2b4.svg": "/prototype-in-figma/static/media/person.2411d2b4.svg",
-    "static/media/plus.31922d0f.svg": "/prototype-in-figma/static/media/plus.31922d0f.svg",
-    "static/media/search.b6d6ff85.svg": "/prototype-in-figma/static/media/search.b6d6ff85.svg"
+    "main.css": "/helloxreactxalien-prototypeinfigma/static/css/main.6b381f00.chunk.css",
+    "main.js": "/helloxreactxalien-prototypeinfigma/static/js/main.7fbf060e.chunk.js",
+    "main.js.map": "/helloxreactxalien-prototypeinfigma/static/js/main.7fbf060e.chunk.js.map",
+    "runtime-main.js": "/helloxreactxalien-prototypeinfigma/static/js/runtime-main.9760e503.js",
+    "runtime-main.js.map": "/helloxreactxalien-prototypeinfigma/static/js/runtime-main.9760e503.js.map",
+    "static/js/2.ac6aba7f.chunk.js": "/helloxreactxalien-prototypeinfigma/static/js/2.ac6aba7f.chunk.js",
+    "static/js/2.ac6aba7f.chunk.js.map": "/helloxreactxalien-prototypeinfigma/static/js/2.ac6aba7f.chunk.js.map",
+    "index.html": "/helloxreactxalien-prototypeinfigma/index.html",
+    "static/css/main.6b381f00.chunk.css.map": "/helloxreactxalien-prototypeinfigma/static/css/main.6b381f00.chunk.css.map",
+    "static/js/2.ac6aba7f.chunk.js.LICENSE.txt": "/helloxreactxalien-prototypeinfigma/static/js/2.ac6aba7f.chunk.js.LICENSE.txt",
+    "static/media/back.27a911e1.svg": "/helloxreactxalien-prototypeinfigma/static/media/back.27a911e1.svg",
+    "static/media/chat.fc7d0ee2.svg": "/helloxreactxalien-prototypeinfigma/static/media/chat.fc7d0ee2.svg",
+    "static/media/chevron.19bec2b9.svg": "/helloxreactxalien-prototypeinfigma/static/media/chevron.19bec2b9.svg",
+    "static/media/close.c4aa7b3b.svg": "/helloxreactxalien-prototypeinfigma/static/media/close.c4aa7b3b.svg",
+    "static/media/home.74ff7650.svg": "/helloxreactxalien-prototypeinfigma/static/media/home.74ff7650.svg",
+    "static/media/login-background.8a0e4ac9.jpg": "/helloxreactxalien-prototypeinfigma/static/media/login-background.8a0e4ac9.jpg",
+    "static/media/logo.d40cdef7.svg": "/helloxreactxalien-prototypeinfigma/static/media/logo.d40cdef7.svg",
+    "static/media/person.2411d2b4.svg": "/helloxreactxalien-prototypeinfigma/static/media/person.2411d2b4.svg",
+    "static/media/plus.31922d0f.svg": "/helloxreactxalien-prototypeinfigma/static/media/plus.31922d0f.svg",
+    "static/media/search.b6d6ff85.svg": "/helloxreactxalien-prototypeinfigma/static/media/search.b6d6ff85.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5299660e.js",
+    "static/js/runtime-main.9760e503.js",
     "static/js/2.ac6aba7f.chunk.js",
     "static/css/main.6b381f00.chunk.css",
-    "static/js/main.15deba43.chunk.js"
+    "static/js/main.7fbf060e.chunk.js"
   ]
 }
