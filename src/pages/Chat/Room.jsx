@@ -4,14 +4,16 @@ import useUsers from "hooks/useUsers";
 
 function ChatBox({ user, children, right = false }) {
   const elements = [
-    <div className="w-52">
+    <div key="avatar" className="w-52">
       <img
         className="rounded-full w-full"
         src={user.avatar}
         alt="user avatar"
       />
     </div>,
-    <p className="bg-gray-100 rounded-lg p-4 text-xs">{children}</p>,
+    <p key="message" className="bg-gray-100 rounded-lg p-4 text-xs">
+      {children}
+    </p>,
   ];
 
   return (
