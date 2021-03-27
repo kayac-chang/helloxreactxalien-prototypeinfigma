@@ -1,5 +1,6 @@
 import * as Template from "components/templates";
 import * as Icon from "components/Icon";
+import Link from "components/Link";
 import useUsers from "hooks/useUsers";
 
 function ChatBox({ user, children, right = false }) {
@@ -29,9 +30,9 @@ export function Room() {
   return (
     <Template.Main>
       <header className="flex justify-center items-center py-4 relative border-b">
-        <button className="absolute left-0 p-2">
+        <Link to="/chat" className="absolute left-0 p-2">
           <Icon.Chevron className="w-3 text-black" />
-        </button>
+        </Link>
 
         <h1 className="font-bold">Room</h1>
       </header>
