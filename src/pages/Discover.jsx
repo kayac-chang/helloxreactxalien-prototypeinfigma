@@ -35,7 +35,7 @@ export default function Discover() {
   const posts = usePosts();
 
   return (
-    <Template.Main title="Discover">
+    <Template.Main className="px-4" title="Discover">
       <WhatsNewToday posts={posts} />
 
       <BrowseAll posts={posts} />

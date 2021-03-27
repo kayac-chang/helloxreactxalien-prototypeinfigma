@@ -46,11 +46,11 @@ export default function Profile() {
   const photos = usePhotos();
 
   if (!user) {
-    return <Template.Main />;
+    return <Template.Main className="px-4" />;
   }
 
   return (
-    <Template.Main>
+    <Template.Main className="px-4">
       <Avatar user={user} />
 
       <Control user={user} />

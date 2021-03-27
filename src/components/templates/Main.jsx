@@ -1,9 +1,10 @@
+import clsx from "clsx";
 import BottomNav from "components/BottomNav";
 
-export function Main({ title, children }) {
+export function Main({ title, children, className }) {
   return (
     <>
-      <div className="flex flex-col px-4 pb-16">
+      <div className={clsx("flex flex-col pb-16", className)}>
         {title && (
           <header>
             <h1 className="py-8 text-4xl font-medium font-comfortaa">

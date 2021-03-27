@@ -9,14 +9,14 @@ function User({ picture, name, location }) {
   };
 }
 
-export default function useUsers() {
+export default function useUsers(count = 1) {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetchUser({ count: 1 })
+    fetchUser({ count })
       .then((list) => list.map(User))
       .then(setUsers);
-  }, []);
+  }, [count]);
 
   return users;
 }

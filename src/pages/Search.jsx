@@ -8,7 +8,7 @@ export default function Search() {
   const photos = usePhotos();
 
   return (
-    <Template.Main title="Search">
+    <Template.Main className="px-4" title="Search">
       <div>
         <section className="mb-8">
           <Input.Text placeholder="Keyword" />
