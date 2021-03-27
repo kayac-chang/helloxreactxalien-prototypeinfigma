@@ -4,7 +4,7 @@ import Login from "pages/Login";
 import Discover from "pages/Discover";
 import Search from "pages/Search";
 import Profile from "pages/Profile";
-import Chats from "pages/Chats";
+import * as Chat from "pages/Chat";
 
 function App() {
   return (
@@ -16,7 +16,8 @@ function App() {
       {/* <Discover /> */}
       {/* <Search /> */}
       {/* <Profile /> */}
-      <Chats />
+      {/* <Chat.List /> */}
+      <Chat.Room />
     </div>
   );
 }

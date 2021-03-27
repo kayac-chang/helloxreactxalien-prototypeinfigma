@@ -1,7 +1,7 @@
 import * as Template from "components/templates";
 import useUsers from "hooks/useUsers";
 
-export default function Chats() {
+export function List() {
   const users = useUsers(4);
 
   return (
