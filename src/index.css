@@ -1,5 +1,7 @@
 /* preflight */
-@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
