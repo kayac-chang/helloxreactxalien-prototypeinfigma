@@ -1,19 +1,10 @@
-import usePosts from "api/usePosts";
+import usePosts from "hooks/usePosts";
 import Swiper from "components/Swiper";
 import Avatar from "components/Avatar";
-import BottomNav from "components/BottomNav";
+import Section from "components/Section";
+import * as Template from "components/templates";
 import * as Button from "components/Button";
 import clsx from "clsx";
-
-function Section({ title, children }) {
-  return (
-    <section className="space-y-4">
-      <h2 className="text-xs font-bold">{title}</h2>
-
-      {children}
-    </section>
-  );
-}
 
 function WhatsNewToday({ posts }) {
   return (
@@ -49,26 +40,14 @@ export default function Discover() {
   const posts = usePosts();
 
   return (
-    <>
-      <div className="flex flex-col px-4 pb-16">
-        <header>
-          <h1 className="py-8 text-4xl font-medium font-comfortaa">Discover</h1>
-        </header>
+    <Template.Main title="Discover">
+      <WhatsNewToday posts={posts} />
 
-        <main>
-          <WhatsNewToday posts={posts} />
+      <BrowseAll posts={posts} />
 
-          <BrowseAll posts={posts} />
-
-          <section className="py-8">
-            <Button.Default className="text-xs font-bold">
-              SEE MORE
-            </Button.Default>
-          </section>
-        </main>
-      </div>
-
-      <BottomNav />
-    </>
+      <section className="py-8">
+        <Button.Default className="text-xs font-bold">SEE MORE</Button.Default>
+      </section>
+    </Template.Main>
   );
 }

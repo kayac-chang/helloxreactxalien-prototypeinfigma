@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import fetchPhoto from "api/photo";
+import fetchUser from "api/user";
 
 function User({ picture, name, login }) {
   return {
@@ -6,18 +8,6 @@ function User({ picture, name, login }) {
     name: `${name.first} ${name.last}`,
     avatar: picture.thumbnail,
   };
-}
-
-function fetchPhoto({ count }) {
-  return fetch(`https://picsum.photos/v2/list?limit=${count}`).then((res) =>
-    res.json()
-  );
-}
-
-function fetchUser({ count }) {
-  return fetch(`https://randomuser.me/api/?results=${count}`)
-    .then((res) => res.json())
-    .then(({ results }) => results);
 }
 
 export default function usePosts() {
