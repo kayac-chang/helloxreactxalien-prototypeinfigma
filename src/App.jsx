@@ -14,15 +14,15 @@ function App() {
   return (
     <div className="w-screen h-screen flex flex-col">
       {{
-        ["/"]: <LoggerOut />,
-        ["/register/step1"]: <Register.Step1 />,
-        ["/register/step2"]: <Register.Step2 />,
-        ["/login"]: <Login />,
-        ["/discover"]: <Discover />,
-        ["/search"]: <Search />,
-        ["/profile"]: <Profile />,
-        ["/chat"]: <Chat.List />,
-        ["/chat/room"]: <Chat.Room />,
+        "/": <LoggerOut />,
+        "/register/step1": <Register.Step1 />,
+        "/register/step2": <Register.Step2 />,
+        "/login": <Login />,
+        "/discover": <Discover />,
+        "/search": <Search />,
+        "/profile": <Profile />,
+        "/chat": <Chat.List />,
+        "/chat/room": <Chat.Room />,
       }[location.pathname] || <></>}
     </div>
   );

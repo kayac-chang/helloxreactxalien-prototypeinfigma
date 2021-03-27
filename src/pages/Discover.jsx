@@ -35,7 +35,11 @@ function BrowseAll({ posts, onPostClick }) {
       <Gallery>
         {posts.map((post) => (
           <button key={post.photo} onClick={() => onPostClick(post)}>
-            <img src={post.photo} alt="img" className="object-cover h-80" />
+            <img
+              src={post.photo}
+              alt={post.photo}
+              className="object-cover h-80"
+            />
           </button>
         ))}
       </Gallery>
@@ -48,7 +52,7 @@ function PhotoOpen({ post, onClose }) {
     <Modal>
       <img
         src={post.photo}
-        alt="post photo"
+        alt={post.photo}
         className="object-cover h-full absolute top-0 -z-1"
       />
 
