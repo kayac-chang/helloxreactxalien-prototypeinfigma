@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/prototype-in-figma/static/css/main.6b381f00.chunk.css",
-    "main.js": "/prototype-in-figma/static/js/main.1967a48a.chunk.js",
-    "main.js.map": "/prototype-in-figma/static/js/main.1967a48a.chunk.js.map",
+    "main.js": "/prototype-in-figma/static/js/main.15deba43.chunk.js",
+    "main.js.map": "/prototype-in-figma/static/js/main.15deba43.chunk.js.map",
     "runtime-main.js": "/prototype-in-figma/static/js/runtime-main.5299660e.js",
     "runtime-main.js.map": "/prototype-in-figma/static/js/runtime-main.5299660e.js.map",
     "static/js/2.ac6aba7f.chunk.js": "/prototype-in-figma/static/js/2.ac6aba7f.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.5299660e.js",
     "static/js/2.ac6aba7f.chunk.js",
     "static/css/main.6b381f00.chunk.css",
-    "static/js/main.1967a48a.chunk.js"
+    "static/js/main.15deba43.chunk.js"
   ]
 }
