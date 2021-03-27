@@ -1,6 +1,7 @@
 import * as Register from "pages/Register";
 import LoggerOut from "pages/LoggerOut";
 import Login from "pages/Login";
+import Discover from "pages/Discover";
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       {/* <LoggerOut /> */}
       {/* <Register.Step1 /> */}
       {/* <Register.Step2 /> */}
-      <Login />
+      {/* <Login /> */}
+      <Discover />
     </div>
   );
 }
