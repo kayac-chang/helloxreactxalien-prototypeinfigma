@@ -1,5 +1,5 @@
 import fetchUser from "api/user";
-import { useEffect, useState } from "react";
+import initContext from "./base";
 
 function User({ picture, name, location }) {
   return {
@@ -9,14 +9,11 @@ function User({ picture, name, location }) {
   };
 }
 
-export default function useUsers(count = 1) {
-  const [users, setUsers] = useState([]);
+const { Provider: UserProvider, useHook: useUsers } = initContext(() => {
+  const count = 30;
 
-  useEffect(() => {
-    fetchUser({ count })
-      .then((list) => list.map(User))
-      .then(setUsers);
-  }, [count]);
+  return fetchUser({ count }).then((list) => list.map(User));
+});
 
-  return users;
-}
+export { UserProvider, useUsers };
+export default useUsers;

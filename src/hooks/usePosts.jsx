@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import fetchPhoto from "api/photo";
 import fetchUser from "api/user";
+import initContext from "./base";
 
 function User({ picture, name, login }) {
   return {
@@ -10,22 +10,18 @@ function User({ picture, name, login }) {
   };
 }
 
-export default function usePosts() {
-  const [post, setPost] = useState([]);
+const { Provider: PostProvider, useHook: usePosts } = initContext(() => {
+  const count = 30;
+  const size = 1200;
 
-  useEffect(() => {
-    const count = 30;
-    const size = 1200;
+  return Promise.all([fetchPhoto({ count }), fetchUser({ count })]).then(
+    ([photos, users]) =>
+      photos.map((photo, index) => ({
+        ...User(users[index]),
+        photo: `https://picsum.photos/id/${photo.id}/${size}`,
+      }))
+  );
+});
 
-    Promise.all([fetchPhoto({ count }), fetchUser({ count })])
-      .then(([photos, users]) =>
-        photos.map((photo, index) => ({
-          ...User(users[index]),
-          photo: `https://picsum.photos/id/${photo.id}/${size}`,
-        }))
-      )
-      .then(setPost);
-  }, []);
-
-  return post;
-}
+export { PostProvider, usePosts };
+export default usePosts;
