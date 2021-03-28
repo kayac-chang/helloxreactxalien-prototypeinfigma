@@ -1,0 +1,7 @@
+<svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M6.21739 9.47827C3.33591 9.47827 1 11.8142 1 14.6957V16H11.4348V14.6957C11.4348 11.8142 9.09888 9.47827 6.21739 9.47827Z"
+        stroke="currentColor" />
+
+    <ellipse cx="6.21776" cy="4.91304" rx="3.91307" ry="3.91304" stroke="currentColor" stroke-linecap="square" />
+</svg>
